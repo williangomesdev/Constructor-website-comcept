@@ -120,7 +120,26 @@ header .search-form label:hover {
   color: #f5bf23;
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 1024px) {
+  header .icons #menu-btn {
+    display: none;
+  }
+  header .icons #info-btn,
+header .icons #search-btn,
+header .icons #login-btn {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+  header .search-form {
+    width: 70rem;
+  }
+}
+@media (max-width: 768px) {
   html {
     font-size: 50%;
   }
@@ -155,24 +174,5 @@ header .icons #login-btn {
   }
   header .search-form {
     width: 40rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  html {
-    font-size: 55%;
-  }
-
-  header .search-form {
-    width: 70rem;
-  }
-}
-@media (min-width: 1024px) {
-  header .icons #menu-btn {
-    display: none;
-  }
-  header .icons #info-btn,
-header .icons #search-btn,
-header .icons #login-btn {
-    display: inline-block;
   }
 }/*# sourceMappingURL=main.css.map */
