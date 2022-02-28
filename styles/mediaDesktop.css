@@ -1,1 +1,10 @@
-/*# sourceMappingURL=mediaDesktop.css.map */
+@media (min-width: 1024px) {
+  header .icons #menu-btn {
+    display: none;
+  }
+  header .icons #info-btn,
+header .icons #search-btn,
+header .icons #login-btn {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=mediaDesktop.css.map */

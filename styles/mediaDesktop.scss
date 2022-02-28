@@ -1,18 +1,17 @@
 @media (min-width: 1024px) {
-  html {
-  }
-
   header {
     .navbar {
     }
 
     .icons {
       #menu-btn {
+          display: none;
       }
 
       #info-btn,
       #search-btn,
       #login-btn {
+          display: inline-block;
       }
     }
   }

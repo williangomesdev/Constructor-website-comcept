@@ -72,11 +72,8 @@ header .icons div:hover {
   background: #111;
   color: #fff;
 }
-header #menu-btn {
-  display: none;
-}
 
-@media (min-width: 0px) {
+@media (min-width: 0px) and (max-width: 1023px) {
   html {
     font-size: 50%;
   }
@@ -113,5 +110,15 @@ header .icons #login-btn {
 @media (min-width: 768px) and (max-width: 1024px) {
   html {
     font-size: 55%;
+  }
+}
+@media (min-width: 1024px) {
+  header .icons #menu-btn {
+    display: none;
+  }
+  header .icons #info-btn,
+header .icons #search-btn,
+header .icons #login-btn {
+    display: inline-block;
   }
 }/*# sourceMappingURL=main.css.map */
