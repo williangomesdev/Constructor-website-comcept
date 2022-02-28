@@ -6,14 +6,15 @@ let searchButton = document.querySelector("#search-btn");
 //Ativer menu mobile
 navButton.onclick = () => {
   navbar.classList.toggle("active");
+  searchForm.classList.remove("active");
 };
 //Ativar o formulário de pesquisa
 searchButton.onclick = () => {
   searchForm.classList.toggle("active");
+  navbar.classList.remove("active");
 };
 
 window.onscroll = () => {
   navbar.classList.remove("active");
   searchForm.classList.remove("active");
 };
-

@@ -1,4 +1,4 @@
-@media (min-width: 0px) and (max-width: 1023px) {
+@media (min-width: 0px) and (max-width: 768px){
   html {
     font-size: 50%;
   }
@@ -26,15 +26,19 @@
     }
 
     .icons {
-      #menu-btn {
+      #menu-btn,
+      #search-btn {
         display: inline-block;
       }
 
       #info-btn,
-      #search-btn,
       #login-btn {
         display: none;
       }
+    }
+
+    .search-form {
+      width: 40rem;
     }
   }
 }
