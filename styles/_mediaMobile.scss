@@ -27,13 +27,17 @@
 
     .icons {
       #menu-btn,
-      #search-btn {
+      #search-btn,
+      #login-btn {
         display: inline-block;
       }
 
-      #info-btn,
-      #login-btn {
-        display: none;
+      #info-btn {
+        display: inline-block;
+        position: fixed;
+        bottom: 1.5rem;
+        right: 5%;
+        z-index: 1200;
       }
     }
 

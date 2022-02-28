@@ -245,12 +245,16 @@ header .icons #login-btn {
     margin: 2rem;
   }
   header .icons #menu-btn,
-header .icons #search-btn {
+header .icons #search-btn,
+header .icons #login-btn {
     display: inline-block;
   }
-  header .icons #info-btn,
-header .icons #login-btn {
-    display: none;
+  header .icons #info-btn {
+    display: inline-block;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 5%;
+    z-index: 1200;
   }
   header .search-form {
     width: 95%;
