@@ -1,0 +1,37 @@
+.home {
+  padding: 0;
+
+  .slide {
+    min-height: 60rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(90deg, $white, transparent);
+    }
+
+    .content {
+      width: 90rem;
+      padding: 0 0 0 5%;
+      position: relative;
+
+      h3 {
+        @include titleText(6rem);
+        text-transform: uppercase;
+      }
+      p {
+        @include graphText(1.6rem);
+        padding: 1rem 0;
+      }
+    }
+  }
+}
