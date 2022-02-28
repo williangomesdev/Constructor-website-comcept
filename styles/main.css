@@ -95,6 +95,7 @@ header .icons div {
   background: #eee;
   cursor: pointer;
   text-align: center;
+  transition-duration: 0.2s;
   margin-left: 0.3rem;
 }
 header .icons div:hover {
@@ -202,6 +203,87 @@ header .login-form p a {
 }
 header .login-form p a:hover {
   text-decoration: underline;
+}
+
+.contact-info {
+  position: fixed;
+  top: 0;
+  right: -35rem;
+  width: 35rem;
+  background: #fff;
+  height: 100%;
+  text-align: center;
+  z-index: 1200;
+  padding: 0 2rem;
+  padding-top: 5rem;
+  transition-duration: 0.5s;
+}
+.contact-info.active {
+  right: 0rem;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+}
+.contact-info #close-contact-info {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  font-size: 4rem;
+  color: #111;
+  transition-duration: 0.1s;
+}
+.contact-info #close-contact-info:hover {
+  transform: rotate(90deg);
+}
+.contact-info .info {
+  padding: 2rem 0;
+}
+.contact-info .info i {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #111;
+  background: #eee;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.2s;
+  margin-bottom: 0.5rem;
+}
+.contact-info .info i:hover {
+  background: #111;
+  color: #fff;
+}
+.contact-info .info h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #111;
+  padding: 1rem 0;
+}
+.contact-info .info p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666;
+}
+.contact-info .share {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+.contact-info .share a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #111;
+  background: #eee;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.2s;
+  margin: 0 0.3rem;
+}
+.contact-info .share a:hover {
+  background: #111;
+  color: #fff;
 }
 
 @media (max-width: 450px) {

@@ -1,0 +1,57 @@
+.contact-info {
+  position: fixed;
+  top: 0;
+  right: -35rem;
+  width: 35rem;
+  background: $white;
+  height: 100%;
+  text-align: center;
+  z-index: 1200;
+  padding: 0 2rem;
+  padding-top: 5rem;
+  transition-duration: 0.5s;
+
+  &.active {
+    right: 0rem;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+  }
+
+  #close-contact-info {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    font-size: 4rem;
+    color: $black;
+    transition-duration: 0.1s;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+  .info {
+    padding: 2rem 0;
+    i {
+      @include iconsBox();
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      @include titleText(2rem);
+      padding: 1rem 0;
+    }
+    p {
+      @include graphText(1.5rem);
+    }
+  }
+
+  .share {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: $border;
+    a {
+      @include iconsBox();
+      margin: 0 0.3rem;
+    }
+  }
+}

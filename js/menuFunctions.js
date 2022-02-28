@@ -4,6 +4,9 @@ let searchForm = document.querySelector("header .search-form");
 let searchButton = document.querySelector("#search-btn");
 let loginForm = document.querySelector("header .login-form");
 let loginButton = document.querySelector("#login-btn");
+let contactModal = document.querySelector(".contact-info");
+let contactButton = document.querySelector("#info-btn");
+let contactClose = document.querySelector("#close-contact-info");
 
 //Ativer menu mobile
 navButton.onclick = () => {
@@ -23,6 +26,16 @@ loginButton.onclick = () => {
   loginForm.classList.toggle("active");
   navbar.classList.remove("active");
   searchForm.classList.remove("active");
+};
+
+//Ativar modal de informações
+contactButton.onclick = () => {
+  contactModal.classList.add("active");
+};
+
+//Fechar modal de informações
+contactClose.onclick = () => {
+  contactModal.classList.remove("active");
 };
 
 window.onscroll = () => {

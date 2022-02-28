@@ -25,6 +25,7 @@
   background: $light-bg;
   cursor: pointer;
   text-align: center;
+  transition-duration: .2s;
 
   &:hover {
     background: $black;
