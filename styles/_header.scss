@@ -33,4 +33,42 @@ header {
     @include iconsBox();
     margin-left: 0.3rem;
   }
+
+  .search-form {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70rem;
+    background: $white;
+    box-shadow: $box-shadow;
+    padding: 1rem;
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    animation: fadeIn 0.2s linear;
+   
+    &.active {
+      display: flex;
+    }
+
+    input {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      background: $light-bg;
+      font-size: 1.6rem;
+      color: $light-color;
+    }
+
+    label {
+      font-size: 2.5rem;
+      color: $black;
+      cursor: pointer;
+      margin: 0 1rem;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
 }

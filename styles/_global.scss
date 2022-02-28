@@ -30,3 +30,10 @@ html {
     background: $yellow;
   }
 }
+
+@keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}

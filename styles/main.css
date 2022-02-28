@@ -27,6 +27,19 @@ html::-webkit-scrollbar-thumb {
   background: #f5bf23;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -71,6 +84,40 @@ header .icons div {
 header .icons div:hover {
   background: #111;
   color: #fff;
+}
+header .search-form {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  -webkit-animation: fadeIn 0.2s linear;
+          animation: fadeIn 0.2s linear;
+}
+header .search-form.active {
+  display: flex;
+}
+header .search-form input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  background: #eee;
+  font-size: 1.6rem;
+  color: #666;
+}
+header .search-form label {
+  font-size: 2.5rem;
+  color: #111;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+header .search-form label:hover {
+  color: #f5bf23;
 }
 
 @media (min-width: 0px) and (max-width: 1023px) {

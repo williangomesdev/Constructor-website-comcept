@@ -1,10 +1,19 @@
-//Ativer menu mobile
 let navbar = document.querySelector("header .navbar");
-let navbutton = document.querySelector("#menu-btn");
+let navButton = document.querySelector("#menu-btn");
+let searchForm = document.querySelector("header .search-form");
+let searchButton = document.querySelector("#search-btn");
 
-navbutton.onclick = () => {
+//Ativer menu mobile
+navButton.onclick = () => {
   navbar.classList.toggle("active");
 };
+//Ativar o formulário de pesquisa
+searchButton.onclick = () => {
+  searchForm.classList.toggle("active");
+};
+
 window.onscroll = () => {
   navbar.classList.remove("active");
+  searchForm.classList.remove("active");
 };
+
