@@ -134,10 +134,6 @@ header .icons #login-btn {
   html {
     font-size: 55%;
   }
-
-  header .search-form {
-    width: 70rem;
-  }
 }
 @media (max-width: 768px) {
   html {
@@ -173,6 +169,6 @@ header .icons #login-btn {
     display: none;
   }
   header .search-form {
-    width: 40rem;
+    width: 95%;
   }
 }/*# sourceMappingURL=main.css.map */
