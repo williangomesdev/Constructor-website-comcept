@@ -8,15 +8,29 @@
     <meta name="description"
         content="Pagina web com o tema de uma empresa de construção civil, com o layout responsivo">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- font-awesome link cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <!-- link css -->
     <link rel="stylesheet" href="./styles/main.css">
     <title>Empresa de construção civil</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-
+    <header><a href="#" class="logo">Nós <span>Construímos</span></a>
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#about">sobre</a>
+            <a href="#services">serviços</a>
+            <a href="#projects">projetos</a>
+            <a href="#pricing">preços</a>
+            <a href="#contact">contatos</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+        <nav class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-info-circle" id="info-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
         </nav>
     </header>
     <main>
@@ -32,6 +46,7 @@
     <footer>
 
     </footer>
+    <!-- js link -->
     <script src="./js/script.js"></script>
 </body>
 
