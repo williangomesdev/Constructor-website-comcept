@@ -13,12 +13,14 @@ navButton.onclick = () => {
   navbar.classList.toggle("active");
   searchForm.classList.remove("active");
   loginForm.classList.remove("active");
+  contactModal.classList.remove("active");
 };
 //Ativar o formulário de pesquisa
 searchButton.onclick = () => {
   searchForm.classList.toggle("active");
   navbar.classList.remove("active");
   loginForm.classList.remove("active");
+  contactModal.classList.remove("active");
 };
 
 //Ativar o modal de login
@@ -26,11 +28,15 @@ loginButton.onclick = () => {
   loginForm.classList.toggle("active");
   navbar.classList.remove("active");
   searchForm.classList.remove("active");
+  contactModal.classList.remove("active");
 };
 
 //Ativar modal de informações
 contactButton.onclick = () => {
   contactModal.classList.add("active");
+  navbar.classList.remove("active");
+  searchForm.classList.remove("active");
+  loginForm.classList.remove("active");
 };
 
 //Fechar modal de informações

@@ -288,12 +288,21 @@ header .login-form p a:hover {
 
 @media (max-width: 450px) {
   header {
+    font-size: 50%;
     flex-direction: column;
+  }
+  header .logo {
+    margin-bottom: 1rem;
+  }
+
+  .contact-info {
+    right: -100%;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
 
   header .navbar {
