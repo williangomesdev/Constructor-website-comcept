@@ -286,6 +286,21 @@ header .login-form p a:hover {
   color: #fff;
 }
 
+@media (min-width: 1024px) {
+  header .icons #menu-btn {
+    display: none;
+  }
+  header .icons #info-btn,
+header .icons #search-btn,
+header .icons #login-btn {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+}
 @media (max-width: 450px) {
   header {
     font-size: 50%;
@@ -332,20 +347,5 @@ header .icons #login-btn {
   }
   header .search-form {
     width: 95%;
-  }
-}
-@media (min-width: 1024px) {
-  header .icons #menu-btn {
-    display: none;
-  }
-  header .icons #info-btn,
-header .icons #search-btn,
-header .icons #login-btn {
-    display: inline-block;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  html {
-    font-size: 55%;
   }
 }/*# sourceMappingURL=main.css.map */
