@@ -56,6 +56,10 @@ html::-webkit-scrollbar-thumb {
   color: #111;
 }
 
+section {
+  padding: 5rem 10%;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -68,6 +72,7 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  background: #fff;
 }
 header .logo {
   font-size: 2.5rem;
@@ -213,10 +218,10 @@ header .login-form p a:hover {
   background: #fff;
   height: 100%;
   text-align: center;
-  z-index: 1200;
+  z-index: 1100;
   padding: 0 2rem;
   padding-top: 5rem;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 .contact-info.active {
   right: 0rem;
@@ -286,6 +291,44 @@ header .login-form p a:hover {
   color: #fff;
 }
 
+.home {
+  padding: 0;
+}
+.home .slide {
+  min-height: 60rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.home .slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+.home .slide .content {
+  width: 90rem;
+  padding: 0 0 0 5%;
+  position: relative;
+}
+.home .slide .content h3 {
+  font-size: 6rem;
+  text-transform: capitalize;
+  color: #111;
+  text-transform: uppercase;
+}
+.home .slide .content p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #666;
+  padding: 1rem 0;
+}
+
 @media (min-width: 1024px) {
   header .icons #menu-btn {
     display: none;
@@ -301,23 +344,9 @@ header .icons #login-btn {
     font-size: 55%;
   }
 }
-@media (max-width: 450px) {
-  header {
-    font-size: 50%;
-    flex-direction: column;
-  }
-  header .logo {
-    margin-bottom: 1rem;
-  }
-
-  .contact-info {
-    right: -100%;
-    width: 100%;
-  }
-}
 @media (max-width: 768px) {
-  html {
-    font-size: 55%;
+  section {
+    padding: 3rem 5%;
   }
 
   header .navbar {
@@ -347,5 +376,26 @@ header .icons #login-btn {
   }
   header .search-form {
     width: 95%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  header {
+    flex-direction: column;
+  }
+  header .logo {
+    margin-bottom: 1rem;
+  }
+
+  .contact-info {
+    right: -100%;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

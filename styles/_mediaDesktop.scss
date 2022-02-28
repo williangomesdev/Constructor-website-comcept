@@ -1,16 +1,21 @@
 @media (min-width: 1024px) {
   header {
-    
     .icons {
       #menu-btn {
-          display: none;
+        display: none;
       }
 
       #info-btn,
       #search-btn,
       #login-btn {
-          display: inline-block;
+        display: inline-block;
       }
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 55%;
   }
 }

@@ -6,10 +6,10 @@
   background: $white;
   height: 100%;
   text-align: center;
-  z-index: 1200;
+  z-index: 1100;
   padding: 0 2rem;
   padding-top: 5rem;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 
   &.active {
     right: 0rem;

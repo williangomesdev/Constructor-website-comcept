@@ -9,6 +9,7 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  background: $white;
 
   .logo {
     @include titleText(2.5rem);

@@ -1,22 +1,8 @@
-@media (max-width: 450px) {
-  header {
-    font-size: 50%;
-    flex-direction: column;
-
-    .logo {
-      margin-bottom: 1rem;
-    }
-  }
-
-  .contact-info {
-    right: -100%;
-    width: 100%;
-  }
-}
-
 @media (max-width: 768px) {
-  html {
-    font-size: 55%;
+  
+
+  section {
+    padding: 3rem 5%;
   }
 
   header {
@@ -52,5 +38,28 @@
     .search-form {
       width: 95%;
     }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  header {
+    flex-direction: column;
+
+    .logo {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .contact-info {
+    right: -100%;
+    width: 100%;
   }
 }

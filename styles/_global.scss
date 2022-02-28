@@ -47,11 +47,14 @@ html {
   cursor: pointer;
   font-size: 1.7rem;
   text-transform: capitalize;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 
   &:hover {
     background: $yellow;
     color: $black;
-    
   }
+}
+
+section {
+  padding: 5rem 10%;
 }
