@@ -47,7 +47,7 @@ header {
     align-items: center;
     gap: 1rem;
     animation: fadeIn 0.2s linear;
-   
+
     &.active {
       display: flex;
     }
@@ -68,6 +68,80 @@ header {
 
       &:hover {
         color: $yellow;
+      }
+    }
+  }
+
+  .login-form {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40rem;
+    background: $white;
+    box-shadow: $box-shadow;
+    padding: 2rem;
+    text-align: center;
+    animation: fadeIn 0.2s linear;
+    display: none;
+
+    &.active {
+      display: inline-block;
+    }
+
+    h3 {
+      @include titleText(2.5rem);
+      padding-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .box {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      background: $light-bg;
+      font-size: 1.6rem;
+      color: $light-color;
+      margin: 0.7rem 0;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+
+      label {
+        font-size: 1.5rem;
+        color: $light-color;
+        cursor: pointer;
+      }
+
+      a {
+        font-size: 1.5rem;
+        color: $light-color;
+        margin-left: auto;
+
+        &:hover {
+          color: $yellow;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    p {
+      @include graphText(1.5rem);
+      padding-top: 1rem;
+
+      a {
+        color: $yellow;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

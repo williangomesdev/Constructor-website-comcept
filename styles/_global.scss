@@ -37,3 +37,21 @@ html {
     opacity: 0;
   }
 }
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: $black;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  transition-duration: .5s;
+
+  &:hover {
+    background: $yellow;
+    color: $black;
+    
+  }
+}

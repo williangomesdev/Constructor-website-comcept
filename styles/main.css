@@ -40,6 +40,22 @@ html::-webkit-scrollbar-thumb {
     opacity: 0;
   }
 }
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  transition-duration: 0.5s;
+}
+.btn:hover {
+  background: #f5bf23;
+  color: #111;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -118,6 +134,74 @@ header .search-form label {
 }
 header .search-form label:hover {
   color: #f5bf23;
+}
+header .login-form {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  -webkit-animation: fadeIn 0.2s linear;
+          animation: fadeIn 0.2s linear;
+  display: none;
+}
+header .login-form.active {
+  display: inline-block;
+}
+header .login-form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #111;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+header .login-form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  background: #eee;
+  font-size: 1.6rem;
+  color: #666;
+  margin: 0.7rem 0;
+}
+header .login-form .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+header .login-form .flex label {
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+}
+header .login-form .flex a {
+  font-size: 1.5rem;
+  color: #666;
+  margin-left: auto;
+}
+header .login-form .flex a:hover {
+  color: #f5bf23;
+  text-decoration: underline;
+}
+header .login-form .btn {
+  width: 100%;
+}
+header .login-form p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666;
+  padding-top: 1rem;
+}
+header .login-form p a {
+  color: #f5bf23;
+}
+header .login-form p a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 1024px) {
