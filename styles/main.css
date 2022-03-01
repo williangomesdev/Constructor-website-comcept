@@ -294,7 +294,7 @@ header .login-form p a:hover {
 .home {
   padding: 0;
 }
-.home .slide {
+.home .home-slider .slide {
   min-height: 60rem;
   display: flex;
   align-items: center;
@@ -302,7 +302,7 @@ header .login-form p a:hover {
   background-size: cover !important;
   background-position: center !important;
 }
-.home .slide::before {
+.home .home-slider .slide::before {
   content: "";
   position: absolute;
   top: 0;
@@ -311,22 +311,39 @@ header .login-form p a:hover {
   width: 100%;
   background: linear-gradient(90deg, #fff, transparent);
 }
-.home .slide .content {
+.home .home-slider .slide .content {
   width: 90rem;
   padding: 0 0 0 5%;
   position: relative;
 }
-.home .slide .content h3 {
+.home .home-slider .slide .content h3 {
   font-size: 6rem;
   text-transform: capitalize;
   color: #111;
   text-transform: uppercase;
 }
-.home .slide .content p {
+.home .home-slider .slide .content p {
   font-size: 1.6rem;
   line-height: 1.5;
   color: #666;
   padding: 1rem 0;
+}
+.home .home-slider .swiper-button-prev,
+.home .home-slider .swiper-button-next {
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  width: 7rem;
+  height: 7rem;
+  line-height: 7rem;
+  background: #fff;
+}
+.home .home-slider .swiper-button-prev:hover,
+.home .home-slider .swiper-button-next:hover {
+  background: #f5bf23;
+}
+.home .home-slider .swiper-button-prev::after,
+.home .home-slider .swiper-button-next::after {
+  font-size: 2rem;
+  color: #111;
 }
 
 @media (min-width: 1024px) {
@@ -338,13 +355,16 @@ header .icons #search-btn,
 header .icons #login-btn {
     display: inline-block;
   }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  html {
-    font-size: 55%;
+
+  .home .home-slider .slide .content {
+    padding: 0 0 0 10%;
   }
 }
 @media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
   section {
     padding: 3rem 5%;
   }
@@ -377,15 +397,26 @@ header .icons #login-btn {
   header .search-form {
     width: 95%;
   }
+
+  main .home .home-slider .slide {
+    justify-content: center;
+  }
+  main .home .home-slider .slide .content {
+    text-align: center;
+  }
+  main .home .home-slider .slide .content h3 {
+    font-size: 3rem;
+  }
+  main .home .home-slider .swiper-button-prev,
+main .home .home-slider .swiper-button-next {
+    top: initial;
+    bottom: 0;
+  }
 }
 @media (max-width: 640px) {
-  .home .slide {
-    min-height: 28rem;
-  }
-  .home .slide .content h3 {
-    font-size: 3rem;
-    text-transform: capitalize;
-    color: #111;
+  main .home .swiper-button-prev,
+main .home .swiper-button-next {
+    display: none;
   }
 }
 @media (max-width: 450px) {
@@ -407,11 +438,5 @@ header .icons #login-btn {
   .contact-info {
     right: -100%;
     width: 100%;
-  }
-
-  .home .slide .content h3 {
-    font-size: 2rem;
-    text-transform: capitalize;
-    color: #111;
   }
 }/*# sourceMappingURL=main.css.map */

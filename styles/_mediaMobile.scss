@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
   section {
     padding: 3rem 5%;
   }
@@ -37,17 +41,37 @@
       width: 95%;
     }
   }
+
+  main {
+    .home {
+      .home-slider {
+        .slide {
+          justify-content: center;
+
+          .content {
+            text-align: center;
+            h3 {
+              font-size: 3rem;
+            }
+          }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          top: initial;
+          bottom: 0;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 640px) {
-  .home {
-    .slide {
-      min-height: 28rem;
-
-      .content {
-        h3 {
-          @include titleText(3rem);
-        }
+  main {
+    .home {
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: none;
       }
     }
   }
@@ -73,15 +97,5 @@
   .contact-info {
     right: -100%;
     width: 100%;
-  }
-
-  .home {
-    .slide {
-      .content {
-        h3 {
-          @include titleText(2rem);
-        }
-      }
-    }
   }
 }

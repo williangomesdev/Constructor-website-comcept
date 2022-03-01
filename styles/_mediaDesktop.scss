@@ -12,10 +12,15 @@
       }
     }
   }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  html {
-    font-size: 55%;
+  .home {
+    .home-slider {
+      .slide {
+        .content {
+          padding: 0 0 0 10%;
+        }
+      }
+    }
   }
 }
+
