@@ -10,6 +10,10 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
     <!-- font-awesome link cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!--Swiper link cdn-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
     <!-- link css -->
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Empresa de construção civil</title>
@@ -80,11 +84,11 @@
     </section>
     <main>
         <section class="home" id="home">
-            <article class="home-slider">
-                <div class="w">
-                    <figure class="slide" style="background: url(/assets/images/home-slide-1.jpg) no-repeat;">
+            <article class="swiper home-slider">
+                <div class="swiper-wrapper">
+                    <figure class="swiper-slide slide" style="background: url(/assets/images/home-slide-1.jpg) no-repeat;">
                         <figcaption class="content">
-                            <h3>Nós providenciamos os melhores serviços</h3>
+                            <h3>Nós garantimos os melhores serviços</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis placeat adipisci, unde
                                 expedita accusamus labore in earum laudantium quis, culpa voluptates molestiae, iste
                                 consectetur voluptas perferendis quaerat possimus optio. Quidem!
@@ -92,7 +96,7 @@
                             <a href="#about" class="btn">Veja mais</a>
                         </figcaption>
                     </figure>
-                    <figure class="slide" style="background: url(/assets/images/home-slide-2.jpg) no-repeat;">
+                    <figure class="swiper-slide slide" style="background: url(/assets/images/home-slide-2.jpg) no-repeat;">
                         <figcaption class="content">
                             <h3>Fazendo o sonho ganhar vida</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis placeat adipisci, unde
@@ -102,7 +106,7 @@
                             <a href="#about" class="btn">Veja mais</a>
                         </figcaption>
                     </figure>
-                    <figure class="slide" style="background: url(/assets/images/home-slide-3.jpg) no-repeat;">
+                    <figure class="swiper-slide slide" style="background: url(/assets/images/home-slide-3.jpg) no-repeat;">
                         <figcaption class="content">
                             <h3>Do conceito a criação</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis placeat adipisci, unde
@@ -118,8 +122,11 @@
         </section>
     </main>
     <footer></footer>
+    <!--Swiper js link-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- js link -->
     <script src=" ./js/menuFunctions.js"></script>
+    <script src=" ./js/slides.js"></script>
 </body>
 
 </html>
