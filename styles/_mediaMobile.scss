@@ -1,6 +1,4 @@
 @media (max-width: 768px) {
-  
-
   section {
     padding: 3rem 5%;
   }
@@ -41,6 +39,20 @@
   }
 }
 
+@media (max-width: 640px) {
+  .home {
+    .slide {
+      min-height: 28rem;
+
+      .content {
+        h3 {
+          @include titleText(3rem);
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
@@ -61,5 +73,15 @@
   .contact-info {
     right: -100%;
     width: 100%;
+  }
+
+  .home {
+    .slide {
+      .content {
+        h3 {
+          @include titleText(2rem);
+        }
+      }
+    }
   }
 }

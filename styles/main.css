@@ -378,6 +378,16 @@ header .icons #login-btn {
     width: 95%;
   }
 }
+@media (max-width: 640px) {
+  .home .slide {
+    min-height: 28rem;
+  }
+  .home .slide .content h3 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #111;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 50%;
@@ -397,5 +407,11 @@ header .icons #login-btn {
   .contact-info {
     right: -100%;
     width: 100%;
+  }
+
+  .home .slide .content h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #111;
   }
 }/*# sourceMappingURL=main.css.map */
