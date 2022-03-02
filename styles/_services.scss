@@ -1,0 +1,44 @@
+/* .services {
+  .box-container {
+    .box {
+      img {
+      }
+      h3 {
+      }
+      p {
+      }
+    }
+  }
+} */
+
+.services {
+  background: $light-bg;
+  .box-container {
+    @include grid(25rem);
+    .box {
+      text-align: center;
+      padding: 3rem;
+      background: $white;
+      box-shadow: $box-shadow;
+      border: $border;
+
+      &:hover img {
+        transition-duration: 0.5s;
+        transform: translateY(-1rem);
+      }
+      img {
+        height: 7rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        @include titleText(2rem);
+        padding: 1rem 0;
+      }
+
+      p {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+}
