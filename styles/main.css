@@ -60,6 +60,15 @@ section {
   padding: 5rem 10%;
 }
 
+.heading {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #111;
+  padding-left: 1rem;
+  border-left: 1rem solid #f5bf23;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -346,6 +355,55 @@ header .login-form p a:hover {
   color: #111;
 }
 
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.about .row .video {
+  flex: 1 1 40rem;
+}
+.about .row .video video {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 40rem;
+}
+.about .row .content h3 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #111;
+}
+.about .row .content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666;
+  padding: 1rem 0;
+}
+.about .box-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+.about .box-container .box {
+  text-align: center;
+  background: #eee;
+  padding: 3rem 2rem;
+}
+.about .box-container .box h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #111;
+}
+.about .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666;
+}
+
 @media (min-width: 1024px) {
   header .icons #menu-btn {
     display: none;
@@ -411,6 +469,14 @@ header .icons #login-btn {
 main .home .home-slider .swiper-button-next {
     top: initial;
     bottom: 0;
+  }
+  main .about .content {
+    text-align: center;
+  }
+  main .about .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 2rem;
   }
 }
 @media (max-width: 640px) {

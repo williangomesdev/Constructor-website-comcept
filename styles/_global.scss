@@ -58,3 +58,10 @@ html {
 section {
   padding: 5rem 10%;
 }
+
+.heading {
+  margin-bottom: 3rem;
+  @include titleText(3rem);
+  padding-left: 1rem;
+  border-left: 1rem solid $yellow;
+}

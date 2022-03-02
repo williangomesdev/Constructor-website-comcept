@@ -63,6 +63,15 @@
         }
       }
     }
+    .about {
+      .content {
+        text-align: center;
+      }
+
+      .box-container {
+        @include grid(26rem);
+      }
+    }
   }
 }
 

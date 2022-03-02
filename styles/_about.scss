@@ -1,0 +1,46 @@
+.about {
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    .video {
+      flex: 1 1 40rem;
+
+      video {
+        width: 100%;
+      }
+    }
+    .content {
+      flex: 1 1 40rem;
+
+      h3 {
+        @include titleText(3.5rem);
+      }
+
+      p {
+        @include graphText(1.5rem);
+        padding: 1rem 0;
+      }
+    }
+  }
+  .box-container {
+    margin-top: 3rem;
+    @include grid(16rem);
+    align-items: center;
+
+    .box {
+        text-align: center;
+        background: $light-bg;
+        padding: 3rem 2rem;
+
+      h3 {
+        @include titleText(2rem);
+      }
+      p {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+}
