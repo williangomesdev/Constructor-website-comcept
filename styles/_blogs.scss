@@ -1,0 +1,38 @@
+.blogs {
+  background: $light-bg;
+  .slide {
+    width: 35rem;
+    text-align: center;
+
+    &:hover .image img {
+      transition-duration: 0.5s;
+      transform: scale(1.1);
+    }
+    .image {
+      height: 25rem;
+      width: 90%;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .content {
+      padding: 2rem;
+      padding-top: 4rem;
+      background: $white;
+      box-shadow: $box-shadow;
+      
+      h3 {
+        @include titleText(2rem);
+      }
+      p {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+}

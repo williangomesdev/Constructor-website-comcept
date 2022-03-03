@@ -635,6 +635,47 @@ header .login-form p a:hover {
   height: 15rem;
 }
 
+.blogs {
+  background: #eee;
+}
+.blogs .slide {
+  width: 35rem;
+  text-align: center;
+}
+.blogs .slide:hover .image img {
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+.blogs .slide .image {
+  height: 25rem;
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.blogs .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs .slide .content {
+  padding: 2rem;
+  padding-top: 4rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.blogs .slide .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #111;
+}
+.blogs .slide .content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666;
+}
+
 @media (min-width: 1024px) {
   header .icons #menu-btn {
     display: none;
