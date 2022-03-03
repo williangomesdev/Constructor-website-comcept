@@ -7,7 +7,7 @@
   .box-container {
     @include grid(31rem);
 
-    .box {
+    a.box {
       &:hover .image img {
         transition-duration: 0.5s;
         transform: scale(1.1);

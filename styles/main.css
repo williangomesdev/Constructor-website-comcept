@@ -450,42 +450,42 @@ header .login-form p a:hover {
   grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   gap: 2rem;
 }
-.projects .box-container .box {
+.projects .box-container a.box {
   cursor: initial;
 }
-.projects .box-container .box:hover .image img {
+.projects .box-container a.box:hover .image img {
   transition-duration: 0.5s;
   transform: scale(1.1);
 }
-.projects .box-container .box .image {
+.projects .box-container a.box .image {
   height: 40rem;
   overflow: hidden;
 }
-.projects .box-container .box .image img {
+.projects .box-container a.box .image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.projects .box-container .box .content {
+.projects .box-container a.box .content {
   display: flex;
   justify-content: space-between;
   background: #fff;
 }
-.projects .box-container .box .content .info {
+.projects .box-container a.box .content .info {
   padding: 1rem 2rem;
 }
-.projects .box-container .box .content .info h3 {
+.projects .box-container a.box .content .info h3 {
   font-size: 1.7rem;
   text-transform: capitalize;
   color: #111;
 }
-.projects .box-container .box .content .info p {
+.projects .box-container a.box .content .info p {
   font-size: 1.5rem;
   line-height: 1.5;
   color: #666;
 }
-.projects .box-container .box .content i {
+.projects .box-container a.box .content i {
   width: 6rem;
   font-size: 3rem;
   background: #f5bf23;
@@ -494,8 +494,49 @@ header .login-form p a:hover {
   line-height: 6.5rem;
   cursor: pointer;
 }
-.projects .box-container .box .content i:hover {
+.projects .box-container a.box .content i:hover {
   color: #111;
+}
+
+.reviews .slide p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666;
+  padding: 1.5rem;
+  background: #eee;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.reviews .slide p::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  background: #eee;
+  transform: rotate(45deg);
+}
+.reviews .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.reviews .slide .user img {
+  height: 7rem;
+  width: 7rem;
+}
+.reviews .slide .user .info h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #111;
+}
+.reviews .slide .user .info .stars {
+  padding-top: 0.5rem;
+}
+.reviews .slide .user .info .stars i {
+  font-size: 1.4rem;
+  color: #f5bf23;
 }
 
 @media (min-width: 1024px) {
