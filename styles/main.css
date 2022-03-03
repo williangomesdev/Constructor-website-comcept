@@ -676,6 +676,18 @@ header .login-form p a:hover {
   color: #666;
 }
 
+.logo-container {
+  text-align: center;
+}
+.logo-container .logo-slider .slide img {
+  height: 10rem;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 @media (min-width: 1024px) {
   header .icons #menu-btn {
     display: none;

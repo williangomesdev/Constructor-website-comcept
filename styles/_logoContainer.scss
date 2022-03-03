@@ -1,0 +1,12 @@
+.logo-container {
+  text-align: center;
+  .logo-slider {
+    .slide {
+      img {
+        height: 10rem;
+        pointer-events: none;
+        user-select: none;
+      }
+    }
+  }
+}
