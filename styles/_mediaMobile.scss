@@ -139,4 +139,17 @@
     right: -100%;
     width: 100%;
   }
+  main {
+    .pricing {
+      .box-container {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .footer {
+      display: inline;
+    }
+  }
 }
