@@ -591,6 +591,50 @@ header .login-form p a:hover {
   color: #666;
 }
 
+.contact {
+  background: #111;
+}
+.contact .heading {
+  color: #fff;
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.contact .row .map {
+  flex: 1 1 40rem;
+  width: 100%;
+}
+.contact .row form {
+  flex: 1 1 40rem;
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.contact .row form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #111;
+  padding-bottom: 1rem;
+}
+.contact .row form .box {
+  margin: 1rem 0;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+  font-size: 1.6rem;
+  color: #666;
+  transition-duration: 0.2s;
+}
+.contact .row form .box:focus {
+  border-color: #f5bf23;
+}
+.contact .row form textarea {
+  resize: none;
+  height: 15rem;
+}
+
 @media (min-width: 1024px) {
   header .icons #menu-btn {
     display: none;
@@ -685,6 +729,11 @@ main .home .home-slider .swiper-button-next {
   main .about .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 2rem;
+  }
+  main .pricing .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     gap: 2rem;
   }
 }

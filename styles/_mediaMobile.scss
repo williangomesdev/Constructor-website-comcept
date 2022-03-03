@@ -11,7 +11,7 @@
       grid-column: 1;
       grid-row: 2;
 
-      :nth-child(1){
+      :nth-child(1) {
         margin-left: 0;
       }
     }
@@ -96,6 +96,12 @@
 
       .box-container {
         @include grid(26rem);
+      }
+    }
+
+    .pricing {
+      .box-container {
+        @include grid(24rem);
       }
     }
   }

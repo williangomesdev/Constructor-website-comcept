@@ -1,0 +1,43 @@
+.contact {
+  background: $black;
+  .heading {
+    color: $white;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    .map {
+      flex: 1 1 40rem;
+      width: 100%;
+    }
+    form {
+      flex: 1 1 40rem;
+      background: $white;
+      padding: 2rem;
+      text-align: center;
+      h3 {
+        @include titleText(2.5rem);
+        padding-bottom: 1rem;
+      }
+      .box {
+        margin: 1rem 0;
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: $border;
+        font-size: 1.6rem;
+        color: $light-color;
+        transition-duration: 0.2s;
+
+        &:focus {
+          border-color: $yellow;
+        }
+      }
+
+      textarea {
+        resize: none;
+        height: 15rem;
+      }
+    }
+  }
+}
